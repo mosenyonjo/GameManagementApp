@@ -1,0 +1,31 @@
+### Create Game
+POST http://localhost:8080/v1/games
+Content-Type: application/json
+
+{
+  "name": "chess",
+  "creationDate": "2023-07-09",
+  "active": true
+}
+
+### Get Game
+GET http://localhost:8080/v1/games/chess
+
+### Update Game
+PUT http://localhost:8080/v1/games/Snakes%20and%20Ladders
+Content-Type: application/json
+
+{
+  "name": "Snakes and Ladders",
+  "creationDate": "2023-07-09",
+  "active": true
+}
+
+### Delete Game
+DELETE http://localhost:8080/v1/games/Snakes%20and%20Ladders
+
+### Get All Games
+GET http://localhost:8080/v1/games
+
+### Delete All Games
+DELETE http://localhost:8080/v1/games
